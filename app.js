@@ -20,3 +20,17 @@ function addDays(days) {
   const newNumericDate = numericDate + amountToSum;
   return new Date(newNumericDate);
 }
+
+const workers = ["Pedro", "Ana", "Rute"];
+//workers.push('Thiago')
+workers = [...workers, "Thiago"];
+
+const workersString = workers.join(", ");
+
+//const isAnaHere = workers.includes('Ana')
+//console.log(workers);
+
+function isWorkerHere(worker) {
+  return workers.includes(worker);
+}
+console.log(isWorkerHere("Ana"), isWorkerHere("Pedro"), isWorkerHere("Zé"));
