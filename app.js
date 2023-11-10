@@ -34,3 +34,7 @@ function isWorkerHere(worker) {
   return workers.includes(worker);
 }
 console.log(isWorkerHere("Ana"), isWorkerHere("Pedro"), isWorkerHere("Zé"));
+
+//workers(1) = undefined
+
+workers.splice(1, 1);
